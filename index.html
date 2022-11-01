@@ -12,7 +12,29 @@
 <body>
     <section id="main">
         <div id="video-container">
+            <!-- autoplay starts the video, loop makes it continually play, and muted removes any and all sound in the video -->
             <video src="html (1).mp4" autoplay loop muted></video>
+        </div>
+        <!-- div to cover/darken the video -->
+        <div id="cover"></div>
+        <div id="content">
+            <h1>Ben Hester</h1>
+            <h2>Web Developer in Training / Really good Saxophonist</h2>
+            <!-- setting the href value to an id will take the user to the element with that id when clicked. -->
+            <a href="#about" id="click">About</a>
+        </div>
+    </section>
+    <section id="about">
+        <h1>About</h1>
+        <p>currently enrolled in a web development program.</p>
+        <h2>Follow me on social media!</h2>
+        <div>
+            <a href="">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-discord"></i>
+            </a>
         </div>
     </section>
 </body>
