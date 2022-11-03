@@ -74,4 +74,29 @@ video {
     border: 2px solid white;
     padding: 10px 30px;
     background-color: #4b5513;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+#click:hover {
+    /* changes the size of an element */
+    transform: scale(0.9);
+}
+#about {
+    padding: 50px;
+    text-align: center;
+}
+#about p {
+    font-size: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+#about h2 {
+    margin: 40px 0;
+    color: #4b5513;
+}
+#about i {
+    font-size: 50px;
+    margin: 0 5px;
 }
