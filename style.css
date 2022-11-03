@@ -20,3 +20,58 @@ a {
     text-decoration: none;
     color: aquamarine;
 }
+#main {
+    /* vh, viewport height, determines the height of an element by setting it to a percentage of the viewport */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* note, the following two styles will only end up effecting the content div, or the third div */
+    justify-content: center;
+    align-items: center;
+    /* so the text does not go up against the left and right edges on smaller screen sizes */
+    padding: 0 20;
+    /* #video-container div will be positioned relative instead of the root */
+    position: relative;
+}
+
+#video-container {
+    /* first frame of the video in the case it takes a moment for the video to start playing */
+    background-image: url(cover.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* determines how a video/image is resized to fit inside its container or parent element. Setting the value to cover causes the video to retain its aspect ratio and fill the given dimensions. note, in this case causes the video to  */
+    object-fit: cover;
+}
+#cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#content {
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+#click {
+    /* inline block allows for top and bottom margin as well as width and height to be set. this is not the case with inline */
+    display: inline-block;
+    margin: 25px;
+    border: 2px solid white;
+    padding: 10px 30px;
+    background-color: #4b5513;
+}
